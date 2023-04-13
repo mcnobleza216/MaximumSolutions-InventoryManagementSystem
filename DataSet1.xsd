@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="dbinventoryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbinventoryConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InventorySystem.My.MySettings.GlobalReference.Default.dbinventoryConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_inventory" msprop:Generator_TableClassName="dt_inventoryDataTable" msprop:Generator_TableVarName="tabledt_inventory" msprop:Generator_RowChangedName="dt_inventoryRowChanged" msprop:Generator_TablePropName="dt_inventory" msprop:Generator_RowDeletingName="dt_inventoryRowDeleting" msprop:Generator_RowChangingName="dt_inventoryRowChanging" msprop:Generator_RowEvHandlerName="dt_inventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_inventoryRowDeleted" msprop:Generator_RowClassName="dt_inventoryRow" msprop:Generator_UserTableName="dt_inventory" msprop:Generator_RowEvArgName="dt_inventoryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="unit_id" msprop:Generator_ColumnVarNameInTable="columnunit_id" msprop:Generator_ColumnPropNameInRow="unit_id" msprop:Generator_ColumnPropNameInTable="unit_idColumn" msprop:Generator_UserColumnName="unit_id" type="xs:string" minOccurs="0" />
+              <xs:element name="serial_number" msprop:Generator_ColumnVarNameInTable="columnserial_number" msprop:Generator_ColumnPropNameInRow="serial_number" msprop:Generator_ColumnPropNameInTable="serial_numberColumn" msprop:Generator_UserColumnName="serial_number" type="xs:string" minOccurs="0" />
+              <xs:element name="brand_name" msprop:Generator_ColumnVarNameInTable="columnbrand_name" msprop:Generator_ColumnPropNameInRow="brand_name" msprop:Generator_ColumnPropNameInTable="brand_nameColumn" msprop:Generator_UserColumnName="brand_name" type="xs:string" minOccurs="0" />
+              <xs:element name="model" msprop:Generator_ColumnVarNameInTable="columnmodel" msprop:Generator_ColumnPropNameInRow="model" msprop:Generator_ColumnPropNameInTable="modelColumn" msprop:Generator_UserColumnName="model" type="xs:string" minOccurs="0" />
+              <xs:element name="unit_type" msprop:Generator_ColumnVarNameInTable="columnunit_type" msprop:Generator_ColumnPropNameInRow="unit_type" msprop:Generator_ColumnPropNameInTable="unit_typeColumn" msprop:Generator_UserColumnName="unit_type" type="xs:string" minOccurs="0" />
+              <xs:element name="unit_condition" msprop:Generator_ColumnVarNameInTable="columnunit_condition" msprop:Generator_ColumnPropNameInRow="unit_condition" msprop:Generator_ColumnPropNameInTable="unit_conditionColumn" msprop:Generator_UserColumnName="unit_condition" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="inventory_defective" msprop:Generator_TableClassName="inventory_defectiveDataTable" msprop:Generator_TableVarName="tableinventory_defective" msprop:Generator_RowChangedName="inventory_defectiveRowChanged" msprop:Generator_TablePropName="inventory_defective" msprop:Generator_RowDeletingName="inventory_defectiveRowDeleting" msprop:Generator_RowChangingName="inventory_defectiveRowChanging" msprop:Generator_RowEvHandlerName="inventory_defectiveRowChangeEventHandler" msprop:Generator_RowDeletedName="inventory_defectiveRowDeleted" msprop:Generator_RowClassName="inventory_defectiveRow" msprop:Generator_UserTableName="inventory_defective" msprop:Generator_RowEvArgName="inventory_defectiveRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="unit_id" msprop:Generator_ColumnVarNameInTable="columnunit_id" msprop:Generator_ColumnPropNameInRow="unit_id" msprop:Generator_ColumnPropNameInTable="unit_idColumn" msprop:Generator_UserColumnName="unit_id" type="xs:string" minOccurs="0" />
+              <xs:element name="serial_number" msprop:Generator_ColumnVarNameInTable="columnserial_number" msprop:Generator_ColumnPropNameInRow="serial_number" msprop:Generator_ColumnPropNameInTable="serial_numberColumn" msprop:Generator_UserColumnName="serial_number" type="xs:string" minOccurs="0" />
+              <xs:element name="brand_name" msprop:Generator_ColumnVarNameInTable="columnbrand_name" msprop:Generator_ColumnPropNameInRow="brand_name" msprop:Generator_ColumnPropNameInTable="brand_nameColumn" msprop:Generator_UserColumnName="brand_name" type="xs:string" minOccurs="0" />
+              <xs:element name="model" msprop:Generator_ColumnVarNameInTable="columnmodel" msprop:Generator_ColumnPropNameInRow="model" msprop:Generator_ColumnPropNameInTable="modelColumn" msprop:Generator_UserColumnName="model" type="xs:string" minOccurs="0" />
+              <xs:element name="unit_type" msprop:Generator_ColumnVarNameInTable="columnunit_type" msprop:Generator_ColumnPropNameInRow="unit_type" msprop:Generator_ColumnPropNameInTable="unit_typeColumn" msprop:Generator_UserColumnName="unit_type" type="xs:string" minOccurs="0" />
+              <xs:element name="unit_condition" msprop:Generator_ColumnVarNameInTable="columnunit_condition" msprop:Generator_ColumnPropNameInRow="unit_condition" msprop:Generator_ColumnPropNameInTable="unit_conditionColumn" msprop:Generator_UserColumnName="unit_condition" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
