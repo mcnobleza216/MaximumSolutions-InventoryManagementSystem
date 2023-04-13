@@ -1,0 +1,102 @@
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\mysql.data.dll
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\Inventory System.vbprojResolveAssemblyReference.cache
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\Inventory System.vbproj.GenerateResource.Cache
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\MarcChristian\documents\visual studio 2013\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.dashboard.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\InventoryMS\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\InventoryMS\obj\Debug\WindowsApplication1.exe
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\InventoryMS\obj\Debug\WindowsApplication1.xml
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\InventoryMS\obj\Debug\WindowsApplication1.pdb
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\Antlr3.Runtime.dll
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\mysql.data.dll
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\MySql.Data.Entity.dll
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\Inventory System.vbprojResolveAssemblyReference.cache
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\Inventory System.vbproj.GenerateResource.Cache
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.assign_external.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.assign_internal.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.dashboard.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.designate_external.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.designation_internal.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.Form1.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.Home.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.Resources.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.report_stock.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.settings_account.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.settings_employee.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.settings_security.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_laptop.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_memory.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_monitor.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_networkdevice.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_peripherals.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_printer.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_storage.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_systemunit.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_addolditem.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_itemvalue.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_manage.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_return.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_updateitemvalue.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.exe.config
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.exe.manifest
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.application
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.exe
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.pdb
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.xml
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.exe.manifest
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.application
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.exe
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.xml
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.pdb
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.report_inventory.resources
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\RdlCompile.cache
+C:\Users\MarcChristian\Documents\Visual Studio 2013\Projects\InventoryMS\WindowApplication1\obj\Debug\RdlCompile.compiled
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.exe.config
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.exe
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.xml
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.pdb
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.exe.manifest
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.application
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.exe
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.pdb
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\bin\Debug\Inventory Management System.xml
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\Inventory System.vbprojResolveAssemblyReference.cache
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.assign_external.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.assign_internal.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.dashboard.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.designate_external.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.designation_internal.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.Form1.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.Home.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.Resources.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.report_inventory.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.report_stock.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.settings_account.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.settings_employee.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.settings_security.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_laptop.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_memory.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_monitor.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_networkdevice.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_peripherals.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_printer.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_storage.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.stock_systemunit.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_addolditem.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_itemvalue.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_manage.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_return.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\InventorySystem.storage_updateitemvalue.resources
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\Inventory System.vbproj.GenerateResource.Cache
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\RdlCompile.cache
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\RdlCompile.compiled
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.exe.manifest
+D:\Inventory MS\InventoryMS\InventoryMS\WindowApplication1\obj\Debug\Inventory Management System.application
