@@ -1,0 +1,885 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbinventoryDataSet" targetNamespace="http://tempuri.org/dbinventoryDataSet.xsd" xmlns:mstns="http://tempuri.org/dbinventoryDataSet.xsd" xmlns="http://tempuri.org/dbinventoryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="dbinventoryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbinventoryConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InventorySystem.My.MySettings.GlobalReference.Default.dbinventoryConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_activitylogTableAdapter" GeneratorDataComponentClassName="tbl_activitylogTableAdapter" Name="tbl_activitylog" UserDataComponentName="tbl_activitylogTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_activitylog" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `activitylog_id`, `user_id`, `first_name`, `last_name`, `username`, `action`, `date_time` FROM `tbl_activitylog`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_allemployeesTableAdapter" GeneratorDataComponentClassName="tbl_allemployeesTableAdapter" Name="tbl_allemployees" UserDataComponentName="tbl_allemployeesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_allemployees" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `employee_no`, `first_name`, `middle_name`, `last_name`, `suffix`, `employee_type`, `date_added` FROM `tbl_allemployees`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_allstocksTableAdapter" GeneratorDataComponentClassName="tbl_allstocksTableAdapter" Name="tbl_allstocks" UserDataComponentName="tbl_allstocksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_allstocks" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `stock_id`, `unit_id`, `serial_number`, `brand_name`, `model`, `unit_type`, `unit_condition`, `availability`, `date_added` FROM `tbl_allstocks`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_allstocksvalueTableAdapter" GeneratorDataComponentClassName="tbl_allstocksvalueTableAdapter" Name="tbl_allstocksvalue" UserDataComponentName="tbl_allstocksvalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_allstocksvalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `unit_type`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_allstocksvalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_cpumanufacturerTableAdapter" GeneratorDataComponentClassName="tbl_cpumanufacturerTableAdapter" Name="tbl_cpumanufacturer" UserDataComponentName="tbl_cpumanufacturerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_cpumanufacturer" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `manufacturer_ID`, `name` FROM `tbl_cpumanufacturer`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_cpuversionTableAdapter" GeneratorDataComponentClassName="tbl_cpuversionTableAdapter" Name="tbl_cpuversion" UserDataComponentName="tbl_cpuversionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_cpuversion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `cpuversion_id`, `version`, `manufacturer` FROM `tbl_cpuversion`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_departmentsTableAdapter" GeneratorDataComponentClassName="tbl_departmentsTableAdapter" Name="tbl_departments" UserDataComponentName="tbl_departmentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_departments" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `department_id`, `department_name` FROM `tbl_departments`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_designateexternalTableAdapter" GeneratorDataComponentClassName="tbl_designateexternalTableAdapter" Name="tbl_designateexternal" UserDataComponentName="tbl_designateexternalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_designateexternal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `assigned_no`, `unit_id`, `serial_number`, `brand_name`, `model`, `unit_type`, `assigned_to`, `employee_no`, `location`, `date_assigned` FROM `tbl_designateexternal`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_designateinternalTableAdapter" GeneratorDataComponentClassName="tbl_designateinternalTableAdapter" Name="tbl_designateinternal" UserDataComponentName="tbl_designateinternalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_designateinternal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `assigned_no`, `unit_id`, `serial_number`, `brand_name`, `model`, `unit_type`, `assigned_to`, `employee_no`, `department`, `date_assigned` FROM `tbl_designateinternal`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_designationsTableAdapter" GeneratorDataComponentClassName="tbl_designationsTableAdapter" Name="tbl_designations" UserDataComponentName="tbl_designationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_designations" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `assigned_no`, `unit_id`, `serial_number`, `model`, `unit_type`, `assigned_to`, `employee_no`, `date_assigned`, `designation_type` FROM `tbl_designations`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_employeeTableAdapter" GeneratorDataComponentClassName="tbl_employeeTableAdapter" Name="tbl_employee" UserDataComponentName="tbl_employeeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_employee" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `employee_no`, `first_name`, `middle_name`, `last_name`, `suffix`, `department` FROM `tbl_employee`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_employeeexternalTableAdapter" GeneratorDataComponentClassName="tbl_employeeexternalTableAdapter" Name="tbl_employeeexternal" UserDataComponentName="tbl_employeeexternalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_employeeexternal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `employee_no`, `first_name`, `middle_name`, `last_name`, `suffix`, `location` FROM `tbl_employeeexternal`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_externallocationTableAdapter" GeneratorDataComponentClassName="tbl_externallocationTableAdapter" Name="tbl_externallocation" UserDataComponentName="tbl_externallocationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_externallocation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `location_ID`, `name` FROM `tbl_externallocation`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_inventorystorageTableAdapter" GeneratorDataComponentClassName="tbl_inventorystorageTableAdapter" Name="tbl_inventorystorage" UserDataComponentName="tbl_inventorystorageTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_inventorystorage" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `unit_type`, `unit_condition` FROM `tbl_inventorystorage`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_laptopconditionTableAdapter" GeneratorDataComponentClassName="tbl_laptopconditionTableAdapter" Name="tbl_laptopcondition" UserDataComponentName="tbl_laptopconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_laptopcondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `unit_condition` FROM `tbl_laptopcondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_memoryconditionTableAdapter" GeneratorDataComponentClassName="tbl_memoryconditionTableAdapter" Name="tbl_memorycondition" UserDataComponentName="tbl_memoryconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_memorycondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `unit_condition` FROM `tbl_memorycondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_memoryversionTableAdapter" GeneratorDataComponentClassName="tbl_memoryversionTableAdapter" Name="tbl_memoryversion" UserDataComponentName="tbl_memoryversionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_memoryversion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `version_id`, `version` FROM `tbl_memoryversion`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_monitorconditionTableAdapter" GeneratorDataComponentClassName="tbl_monitorconditionTableAdapter" Name="tbl_monitorcondition" UserDataComponentName="tbl_monitorconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_monitorcondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `unit_condition` FROM `tbl_monitorcondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_networkdeviceconditionTableAdapter" GeneratorDataComponentClassName="tbl_networkdeviceconditionTableAdapter" Name="tbl_networkdevicecondition" UserDataComponentName="tbl_networkdeviceconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_networkdevicecondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `type`, `unit_condition` FROM `tbl_networkdevicecondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_networkdevicetypeTableAdapter" GeneratorDataComponentClassName="tbl_networkdevicetypeTableAdapter" Name="tbl_networkdevicetype" UserDataComponentName="tbl_networkdevicetypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_networkdevicetype" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `type_id`, `type` FROM `tbl_networkdevicetype`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_pcunitconditionTableAdapter" GeneratorDataComponentClassName="tbl_pcunitconditionTableAdapter" Name="tbl_pcunitcondition" UserDataComponentName="tbl_pcunitconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_pcunitcondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `unit_condition` FROM `tbl_pcunitcondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_peripheralconditionTableAdapter" GeneratorDataComponentClassName="tbl_peripheralconditionTableAdapter" Name="tbl_peripheralcondition" UserDataComponentName="tbl_peripheralconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_peripheralcondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `type`, `unit_condition` FROM `tbl_peripheralcondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_peripheraltypeTableAdapter" GeneratorDataComponentClassName="tbl_peripheraltypeTableAdapter" Name="tbl_peripheraltype" UserDataComponentName="tbl_peripheraltypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_peripheraltype" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `peripheraltype_id`, `type` FROM `tbl_peripheraltype`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_printerconditionTableAdapter" GeneratorDataComponentClassName="tbl_printerconditionTableAdapter" Name="tbl_printercondition" UserDataComponentName="tbl_printerconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_printercondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `unit_condition` FROM `tbl_printercondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_returnedunitTableAdapter" GeneratorDataComponentClassName="tbl_returnedunitTableAdapter" Name="tbl_returnedunit" UserDataComponentName="tbl_returnedunitTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_returnedunit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `returned_id`, `assigned_no`, `unit_id`, `serial_number`, `model`, `unit_condition`, `return_reason`, `assigned_to`, `employee_no`, `designation`, `date_assigned`, `date_returned` FROM `tbl_returnedunit`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_securitykeyTableAdapter" GeneratorDataComponentClassName="tbl_securitykeyTableAdapter" Name="tbl_securitykey" UserDataComponentName="tbl_securitykeyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_securitykey" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `key_id`, `security_key` FROM `tbl_securitykey`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockdepreciationspanTableAdapter" GeneratorDataComponentClassName="tbl_stockdepreciationspanTableAdapter" Name="tbl_stockdepreciationspan" UserDataComponentName="tbl_stockdepreciationspanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockdepreciationspan" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `stocktype_id`, `lifespan`, `unit_type` FROM `tbl_stockdepreciationspan`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stocklaptopTableAdapter" GeneratorDataComponentClassName="tbl_stocklaptopTableAdapter" Name="tbl_stocklaptop" UserDataComponentName="tbl_stocklaptopTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stocklaptop" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `manufacturer`, `cpu`, `memory`, `version`, `storage`, `purchased_value`, `date_purchased` FROM `tbl_stocklaptop`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stocklaptopvalueTableAdapter" GeneratorDataComponentClassName="tbl_stocklaptopvalueTableAdapter" Name="tbl_stocklaptopvalue" UserDataComponentName="tbl_stocklaptopvalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stocklaptopvalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stocklaptopvalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockmemoryTableAdapter" GeneratorDataComponentClassName="tbl_stockmemoryTableAdapter" Name="tbl_stockmemory" UserDataComponentName="tbl_stockmemoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockmemory" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `type`, `size`, `purchased_value`, `date_purchased` FROM `tbl_stockmemory`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockmemoryvalueTableAdapter" GeneratorDataComponentClassName="tbl_stockmemoryvalueTableAdapter" Name="tbl_stockmemoryvalue" UserDataComponentName="tbl_stockmemoryvalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockmemoryvalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stockmemoryvalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockmonitorTableAdapter" GeneratorDataComponentClassName="tbl_stockmonitorTableAdapter" Name="tbl_stockmonitor" UserDataComponentName="tbl_stockmonitorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockmonitor" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `date_purchased` FROM `tbl_stockmonitor`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockmonitorvalueTableAdapter" GeneratorDataComponentClassName="tbl_stockmonitorvalueTableAdapter" Name="tbl_stockmonitorvalue" UserDataComponentName="tbl_stockmonitorvalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockmonitorvalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stockmonitorvalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stocknetworkdeviceTableAdapter" GeneratorDataComponentClassName="tbl_stocknetworkdeviceTableAdapter" Name="tbl_stocknetworkdevice" UserDataComponentName="tbl_stocknetworkdeviceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stocknetworkdevice" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `type`, `purchased_value`, `date_purchased` FROM `tbl_stocknetworkdevice`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stocknetworkdevicevalueTableAdapter" GeneratorDataComponentClassName="tbl_stocknetworkdevicevalueTableAdapter" Name="tbl_stocknetworkdevicevalue" UserDataComponentName="tbl_stocknetworkdevicevalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stocknetworkdevicevalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `type`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stocknetworkdevicevalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockpcunitTableAdapter" GeneratorDataComponentClassName="tbl_stockpcunitTableAdapter" Name="tbl_stockpcunit" UserDataComponentName="tbl_stockpcunitTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockpcunit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `manufacturer`, `cpu`, `memory`, `version`, `storage`, `purchased_value`, `date_purchased` FROM `tbl_stockpcunit`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockpcunitvalueTableAdapter" GeneratorDataComponentClassName="tbl_stockpcunitvalueTableAdapter" Name="tbl_stockpcunitvalue" UserDataComponentName="tbl_stockpcunitvalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockpcunitvalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stockpcunitvalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockperipheralsTableAdapter" GeneratorDataComponentClassName="tbl_stockperipheralsTableAdapter" Name="tbl_stockperipherals" UserDataComponentName="tbl_stockperipheralsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockperipherals" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `type`, `purchased_value`, `date_purchased` FROM `tbl_stockperipherals`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockperipheralsvalueTableAdapter" GeneratorDataComponentClassName="tbl_stockperipheralsvalueTableAdapter" Name="tbl_stockperipheralsvalue" UserDataComponentName="tbl_stockperipheralsvalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockperipheralsvalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `type`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stockperipheralsvalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockprinterTableAdapter" GeneratorDataComponentClassName="tbl_stockprinterTableAdapter" Name="tbl_stockprinter" UserDataComponentName="tbl_stockprinterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockprinter" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `date_purchased` FROM `tbl_stockprinter`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockprintervalueTableAdapter" GeneratorDataComponentClassName="tbl_stockprintervalueTableAdapter" Name="tbl_stockprintervalue" UserDataComponentName="tbl_stockprintervalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockprintervalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stockprintervalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockstorageTableAdapter" GeneratorDataComponentClassName="tbl_stockstorageTableAdapter" Name="tbl_stockstorage" UserDataComponentName="tbl_stockstorageTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockstorage" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `type`, `size`, `purchased_value`, `date_purchased` FROM `tbl_stockstorage`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockstoragevalueTableAdapter" GeneratorDataComponentClassName="tbl_stockstoragevalueTableAdapter" Name="tbl_stockstoragevalue" UserDataComponentName="tbl_stockstoragevalueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_stockstoragevalue" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand_name`, `model`, `purchased_value`, `depreciation_value`, `date_purchased` FROM `tbl_stockstoragevalue`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_storageconditionTableAdapter" GeneratorDataComponentClassName="tbl_storageconditionTableAdapter" Name="tbl_storagecondition" UserDataComponentName="tbl_storageconditionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_storagecondition" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `brand`, `model`, `unit_condition` FROM `tbl_storagecondition`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_storagedrivetypeTableAdapter" GeneratorDataComponentClassName="tbl_storagedrivetypeTableAdapter" Name="tbl_storagedrivetype" UserDataComponentName="tbl_storagedrivetypeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_storagedrivetype" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `storagetype_id`, `storage_type` FROM `tbl_storagedrivetype`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_unitbrandsTableAdapter" GeneratorDataComponentClassName="tbl_unitbrandsTableAdapter" Name="tbl_unitbrands" UserDataComponentName="tbl_unitbrandsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_unitbrands" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `brand_id`, `brand_name`, `unit_type` FROM `tbl_unitbrands`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_unitdesignationTableAdapter" GeneratorDataComponentClassName="tbl_unitdesignationTableAdapter" Name="tbl_unitdesignation" UserDataComponentName="tbl_unitdesignationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_unitdesignation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `assigned_no`, `unit_id`, `serial_number`, `model`, `unit_type`, `assigned_to`, `employee_no`, `date_assigned`, `designation_type` FROM `tbl_unitdesignation`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_userTableAdapter" GeneratorDataComponentClassName="tbl_userTableAdapter" Name="tbl_user" UserDataComponentName="tbl_userTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbinventoryConnectionString (MySettings)" DbObjectName="dbinventory.tbl_user" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `user_id`, `first_name`, `last_name`, `username`, `password`, `user_type`, `position` FROM `tbl_user`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbinventoryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbinventoryDataSet" msprop:Generator_UserDSName="dbinventoryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_activitylog" msprop:Generator_TableClassName="tbl_activitylogDataTable" msprop:Generator_TableVarName="tabletbl_activitylog" msprop:Generator_TablePropName="tbl_activitylog" msprop:Generator_RowDeletingName="tbl_activitylogRowDeleting" msprop:Generator_RowChangingName="tbl_activitylogRowChanging" msprop:Generator_RowEvHandlerName="tbl_activitylogRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_activitylogRowDeleted" msprop:Generator_UserTableName="tbl_activitylog" msprop:Generator_RowChangedName="tbl_activitylogRowChanged" msprop:Generator_RowEvArgName="tbl_activitylogRowChangeEvent" msprop:Generator_RowClassName="tbl_activitylogRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_allemployees" msprop:Generator_TableClassName="tbl_allemployeesDataTable" msprop:Generator_TableVarName="tabletbl_allemployees" msprop:Generator_TablePropName="tbl_allemployees" msprop:Generator_RowDeletingName="tbl_allemployeesRowDeleting" msprop:Generator_RowChangingName="tbl_allemployeesRowChanging" msprop:Generator_RowEvHandlerName="tbl_allemployeesRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_allemployeesRowDeleted" msprop:Generator_UserTableName="tbl_allemployees" msprop:Generator_RowChangedName="tbl_allemployeesRowChanged" msprop:Generator_RowEvArgName="tbl_allemployeesRowChangeEvent" msprop:Generator_RowClassName="tbl_allemployeesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_allstocks" msprop:Generator_TableClassName="tbl_allstocksDataTable" msprop:Generator_TableVarName="tabletbl_allstocks" msprop:Generator_TablePropName="tbl_allstocks" msprop:Generator_RowDeletingName="tbl_allstocksRowDeleting" msprop:Generator_RowChangingName="tbl_allstocksRowChanging" msprop:Generator_RowEvHandlerName="tbl_allstocksRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_allstocksRowDeleted" msprop:Generator_UserTableName="tbl_allstocks" msprop:Generator_RowChangedName="tbl_allstocksRowChanged" msprop:Generator_RowEvArgName="tbl_allstocksRowChangeEvent" msprop:Generator_RowClassName="tbl_allstocksRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_allstocksvalue" msprop:Generator_TableClassName="tbl_allstocksvalueDataTable" msprop:Generator_TableVarName="tabletbl_allstocksvalue" msprop:Generator_TablePropName="tbl_allstocksvalue" msprop:Generator_RowDeletingName="tbl_allstocksvalueRowDeleting" msprop:Generator_RowChangingName="tbl_allstocksvalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_allstocksvalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_allstocksvalueRowDeleted" msprop:Generator_UserTableName="tbl_allstocksvalue" msprop:Generator_RowChangedName="tbl_allstocksvalueRowChanged" msprop:Generator_RowEvArgName="tbl_allstocksvalueRowChangeEvent" msprop:Generator_RowClassName="tbl_allstocksvalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_cpumanufacturer" msprop:Generator_TableClassName="tbl_cpumanufacturerDataTable" msprop:Generator_TableVarName="tabletbl_cpumanufacturer" msprop:Generator_TablePropName="tbl_cpumanufacturer" msprop:Generator_RowDeletingName="tbl_cpumanufacturerRowDeleting" msprop:Generator_RowChangingName="tbl_cpumanufacturerRowChanging" msprop:Generator_RowEvHandlerName="tbl_cpumanufacturerRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_cpumanufacturerRowDeleted" msprop:Generator_UserTableName="tbl_cpumanufacturer" msprop:Generator_RowChangedName="tbl_cpumanufacturerRowChanged" msprop:Generator_RowEvArgName="tbl_cpumanufacturerRowChangeEvent" msprop:Generator_RowClassName="tbl_cpumanufacturerRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_cpuversion" msprop:Generator_TableClassName="tbl_cpuversionDataTable" msprop:Generator_TableVarName="tabletbl_cpuversion" msprop:Generator_TablePropName="tbl_cpuversion" msprop:Generator_RowDeletingName="tbl_cpuversionRowDeleting" msprop:Generator_RowChangingName="tbl_cpuversionRowChanging" msprop:Generator_RowEvHandlerName="tbl_cpuversionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_cpuversionRowDeleted" msprop:Generator_UserTableName="tbl_cpuversion" msprop:Generator_RowChangedName="tbl_cpuversionRowChanged" msprop:Generator_RowEvArgName="tbl_cpuversionRowChangeEvent" msprop:Generator_RowClassName="tbl_cpuversionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_departments" msprop:Generator_TableClassName="tbl_departmentsDataTable" msprop:Generator_TableVarName="tabletbl_departments" msprop:Generator_TablePropName="tbl_departments" msprop:Generator_RowDeletingName="tbl_departmentsRowDeleting" msprop:Generator_RowChangingName="tbl_departmentsRowChanging" msprop:Generator_RowEvHandlerName="tbl_departmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_departmentsRowDeleted" msprop:Generator_UserTableName="tbl_departments" msprop:Generator_RowChangedName="tbl_departmentsRowChanged" msprop:Generator_RowEvArgName="tbl_departmentsRowChangeEvent" msprop:Generator_RowClassName="tbl_departmentsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_designateexternal" msprop:Generator_TableClassName="tbl_designateexternalDataTable" msprop:Generator_TableVarName="tabletbl_designateexternal" msprop:Generator_TablePropName="tbl_designateexternal" msprop:Generator_RowDeletingName="tbl_designateexternalRowDeleting" msprop:Generator_RowChangingName="tbl_designateexternalRowChanging" msprop:Generator_RowEvHandlerName="tbl_designateexternalRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_designateexternalRowDeleted" msprop:Generator_UserTableName="tbl_designateexternal" msprop:Generator_RowChangedName="tbl_designateexternalRowChanged" msprop:Generator_RowEvArgName="tbl_designateexternalRowChangeEvent" msprop:Generator_RowClassName="tbl_designateexternalRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_designateinternal" msprop:Generator_TableClassName="tbl_designateinternalDataTable" msprop:Generator_TableVarName="tabletbl_designateinternal" msprop:Generator_TablePropName="tbl_designateinternal" msprop:Generator_RowDeletingName="tbl_designateinternalRowDeleting" msprop:Generator_RowChangingName="tbl_designateinternalRowChanging" msprop:Generator_RowEvHandlerName="tbl_designateinternalRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_designateinternalRowDeleted" msprop:Generator_UserTableName="tbl_designateinternal" msprop:Generator_RowChangedName="tbl_designateinternalRowChanged" msprop:Generator_RowEvArgName="tbl_designateinternalRowChangeEvent" msprop:Generator_RowClassName="tbl_designateinternalRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_designations" msprop:Generator_TableClassName="tbl_designationsDataTable" msprop:Generator_TableVarName="tabletbl_designations" msprop:Generator_TablePropName="tbl_designations" msprop:Generator_RowDeletingName="tbl_designationsRowDeleting" msprop:Generator_RowChangingName="tbl_designationsRowChanging" msprop:Generator_RowEvHandlerName="tbl_designationsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_designationsRowDeleted" msprop:Generator_UserTableName="tbl_designations" msprop:Generator_RowChangedName="tbl_designationsRowChanged" msprop:Generator_RowEvArgName="tbl_designationsRowChangeEvent" msprop:Generator_RowClassName="tbl_designationsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_employee" msprop:Generator_TableClassName="tbl_employeeDataTable" msprop:Generator_TableVarName="tabletbl_employee" msprop:Generator_TablePropName="tbl_employee" msprop:Generator_RowDeletingName="tbl_employeeRowDeleting" msprop:Generator_RowChangingName="tbl_employeeRowChanging" msprop:Generator_RowEvHandlerName="tbl_employeeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_employeeRowDeleted" msprop:Generator_UserTableName="tbl_employee" msprop:Generator_RowChangedName="tbl_employeeRowChanged" msprop:Generator_RowEvArgName="tbl_employeeRowChangeEvent" msprop:Generator_RowClassName="tbl_employeeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_employeeexternal" msprop:Generator_TableClassName="tbl_employeeexternalDataTable" msprop:Generator_TableVarName="tabletbl_employeeexternal" msprop:Generator_TablePropName="tbl_employeeexternal" msprop:Generator_RowDeletingName="tbl_employeeexternalRowDeleting" msprop:Generator_RowChangingName="tbl_employeeexternalRowChanging" msprop:Generator_RowEvHandlerName="tbl_employeeexternalRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_employeeexternalRowDeleted" msprop:Generator_UserTableName="tbl_employeeexternal" msprop:Generator_RowChangedName="tbl_employeeexternalRowChanged" msprop:Generator_RowEvArgName="tbl_employeeexternalRowChangeEvent" msprop:Generator_RowClassName="tbl_employeeexternalRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_externallocation" msprop:Generator_TableClassName="tbl_externallocationDataTable" msprop:Generator_TableVarName="tabletbl_externallocation" msprop:Generator_TablePropName="tbl_externallocation" msprop:Generator_RowDeletingName="tbl_externallocationRowDeleting" msprop:Generator_RowChangingName="tbl_externallocationRowChanging" msprop:Generator_RowEvHandlerName="tbl_externallocationRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_externallocationRowDeleted" msprop:Generator_UserTableName="tbl_externallocation" msprop:Generator_RowChangedName="tbl_externallocationRowChanged" msprop:Generator_RowEvArgName="tbl_externallocationRowChangeEvent" msprop:Generator_RowClassName="tbl_externallocationRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_inventorystorage" msprop:Generator_TableClassName="tbl_inventorystorageDataTable" msprop:Generator_TableVarName="tabletbl_inventorystorage" msprop:Generator_TablePropName="tbl_inventorystorage" msprop:Generator_RowDeletingName="tbl_inventorystorageRowDeleting" msprop:Generator_RowChangingName="tbl_inventorystorageRowChanging" msprop:Generator_RowEvHandlerName="tbl_inventorystorageRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_inventorystorageRowDeleted" msprop:Generator_UserTableName="tbl_inventorystorage" msprop:Generator_RowChangedName="tbl_inventorystorageRowChanged" msprop:Generator_RowEvArgName="tbl_inventorystorageRowChangeEvent" msprop:Generator_RowClassName="tbl_inventorystorageRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_laptopcondition" msprop:Generator_TableClassName="tbl_laptopconditionDataTable" msprop:Generator_TableVarName="tabletbl_laptopcondition" msprop:Generator_TablePropName="tbl_laptopcondition" msprop:Generator_RowDeletingName="tbl_laptopconditionRowDeleting" msprop:Generator_RowChangingName="tbl_laptopconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_laptopconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_laptopconditionRowDeleted" msprop:Generator_UserTableName="tbl_laptopcondition" msprop:Generator_RowChangedName="tbl_laptopconditionRowChanged" msprop:Generator_RowEvArgName="tbl_laptopconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_laptopconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_memorycondition" msprop:Generator_TableClassName="tbl_memoryconditionDataTable" msprop:Generator_TableVarName="tabletbl_memorycondition" msprop:Generator_TablePropName="tbl_memorycondition" msprop:Generator_RowDeletingName="tbl_memoryconditionRowDeleting" msprop:Generator_RowChangingName="tbl_memoryconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_memoryconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_memoryconditionRowDeleted" msprop:Generator_UserTableName="tbl_memorycondition" msprop:Generator_RowChangedName="tbl_memoryconditionRowChanged" msprop:Generator_RowEvArgName="tbl_memoryconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_memoryconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_memoryversion" msprop:Generator_TableClassName="tbl_memoryversionDataTable" msprop:Generator_TableVarName="tabletbl_memoryversion" msprop:Generator_TablePropName="tbl_memoryversion" msprop:Generator_RowDeletingName="tbl_memoryversionRowDeleting" msprop:Generator_RowChangingName="tbl_memoryversionRowChanging" msprop:Generator_RowEvHandlerName="tbl_memoryversionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_memoryversionRowDeleted" msprop:Generator_UserTableName="tbl_memoryversion" msprop:Generator_RowChangedName="tbl_memoryversionRowChanged" msprop:Generator_RowEvArgName="tbl_memoryversionRowChangeEvent" msprop:Generator_RowClassName="tbl_memoryversionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_monitorcondition" msprop:Generator_TableClassName="tbl_monitorconditionDataTable" msprop:Generator_TableVarName="tabletbl_monitorcondition" msprop:Generator_TablePropName="tbl_monitorcondition" msprop:Generator_RowDeletingName="tbl_monitorconditionRowDeleting" msprop:Generator_RowChangingName="tbl_monitorconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_monitorconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_monitorconditionRowDeleted" msprop:Generator_UserTableName="tbl_monitorcondition" msprop:Generator_RowChangedName="tbl_monitorconditionRowChanged" msprop:Generator_RowEvArgName="tbl_monitorconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_monitorconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_networkdevicecondition" msprop:Generator_TableClassName="tbl_networkdeviceconditionDataTable" msprop:Generator_TableVarName="tabletbl_networkdevicecondition" msprop:Generator_TablePropName="tbl_networkdevicecondition" msprop:Generator_RowDeletingName="tbl_networkdeviceconditionRowDeleting" msprop:Generator_RowChangingName="tbl_networkdeviceconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_networkdeviceconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_networkdeviceconditionRowDeleted" msprop:Generator_UserTableName="tbl_networkdevicecondition" msprop:Generator_RowChangedName="tbl_networkdeviceconditionRowChanged" msprop:Generator_RowEvArgName="tbl_networkdeviceconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_networkdeviceconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_networkdevicetype" msprop:Generator_TableClassName="tbl_networkdevicetypeDataTable" msprop:Generator_TableVarName="tabletbl_networkdevicetype" msprop:Generator_TablePropName="tbl_networkdevicetype" msprop:Generator_RowDeletingName="tbl_networkdevicetypeRowDeleting" msprop:Generator_RowChangingName="tbl_networkdevicetypeRowChanging" msprop:Generator_RowEvHandlerName="tbl_networkdevicetypeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_networkdevicetypeRowDeleted" msprop:Generator_UserTableName="tbl_networkdevicetype" msprop:Generator_RowChangedName="tbl_networkdevicetypeRowChanged" msprop:Generator_RowEvArgName="tbl_networkdevicetypeRowChangeEvent" msprop:Generator_RowClassName="tbl_networkdevicetypeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_pcunitcondition" msprop:Generator_TableClassName="tbl_pcunitconditionDataTable" msprop:Generator_TableVarName="tabletbl_pcunitcondition" msprop:Generator_TablePropName="tbl_pcunitcondition" msprop:Generator_RowDeletingName="tbl_pcunitconditionRowDeleting" msprop:Generator_RowChangingName="tbl_pcunitconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_pcunitconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_pcunitconditionRowDeleted" msprop:Generator_UserTableName="tbl_pcunitcondition" msprop:Generator_RowChangedName="tbl_pcunitconditionRowChanged" msprop:Generator_RowEvArgName="tbl_pcunitconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_pcunitconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_peripheralcondition" msprop:Generator_TableClassName="tbl_peripheralconditionDataTable" msprop:Generator_TableVarName="tabletbl_peripheralcondition" msprop:Generator_TablePropName="tbl_peripheralcondition" msprop:Generator_RowDeletingName="tbl_peripheralconditionRowDeleting" msprop:Generator_RowChangingName="tbl_peripheralconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_peripheralconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_peripheralconditionRowDeleted" msprop:Generator_UserTableName="tbl_peripheralcondition" msprop:Generator_RowChangedName="tbl_peripheralconditionRowChanged" msprop:Generator_RowEvArgName="tbl_peripheralconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_peripheralconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_peripheraltype" msprop:Generator_TableClassName="tbl_peripheraltypeDataTable" msprop:Generator_TableVarName="tabletbl_peripheraltype" msprop:Generator_TablePropName="tbl_peripheraltype" msprop:Generator_RowDeletingName="tbl_peripheraltypeRowDeleting" msprop:Generator_RowChangingName="tbl_peripheraltypeRowChanging" msprop:Generator_RowEvHandlerName="tbl_peripheraltypeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_peripheraltypeRowDeleted" msprop:Generator_UserTableName="tbl_peripheraltype" msprop:Generator_RowChangedName="tbl_peripheraltypeRowChanged" msprop:Generator_RowEvArgName="tbl_peripheraltypeRowChangeEvent" msprop:Generator_RowClassName="tbl_peripheraltypeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_printercondition" msprop:Generator_TableClassName="tbl_printerconditionDataTable" msprop:Generator_TableVarName="tabletbl_printercondition" msprop:Generator_TablePropName="tbl_printercondition" msprop:Generator_RowDeletingName="tbl_printerconditionRowDeleting" msprop:Generator_RowChangingName="tbl_printerconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_printerconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_printerconditionRowDeleted" msprop:Generator_UserTableName="tbl_printercondition" msprop:Generator_RowChangedName="tbl_printerconditionRowChanged" msprop:Generator_RowEvArgName="tbl_printerconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_printerconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_returnedunit" msprop:Generator_TableClassName="tbl_returnedunitDataTable" msprop:Generator_TableVarName="tabletbl_returnedunit" msprop:Generator_TablePropName="tbl_returnedunit" msprop:Generator_RowDeletingName="tbl_returnedunitRowDeleting" msprop:Generator_RowChangingName="tbl_returnedunitRowChanging" msprop:Generator_RowEvHandlerName="tbl_returnedunitRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_returnedunitRowDeleted" msprop:Generator_UserTableName="tbl_returnedunit" msprop:Generator_RowChangedName="tbl_returnedunitRowChanged" msprop:Generator_RowEvArgName="tbl_returnedunitRowChangeEvent" msprop:Generator_RowClassName="tbl_returnedunitRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_securitykey" msprop:Generator_TableClassName="tbl_securitykeyDataTable" msprop:Generator_TableVarName="tabletbl_securitykey" msprop:Generator_TablePropName="tbl_securitykey" msprop:Generator_RowDeletingName="tbl_securitykeyRowDeleting" msprop:Generator_RowChangingName="tbl_securitykeyRowChanging" msprop:Generator_RowEvHandlerName="tbl_securitykeyRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_securitykeyRowDeleted" msprop:Generator_UserTableName="tbl_securitykey" msprop:Generator_RowChangedName="tbl_securitykeyRowChanged" msprop:Generator_RowEvArgName="tbl_securitykeyRowChangeEvent" msprop:Generator_RowClassName="tbl_securitykeyRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockdepreciationspan" msprop:Generator_TableClassName="tbl_stockdepreciationspanDataTable" msprop:Generator_TableVarName="tabletbl_stockdepreciationspan" msprop:Generator_TablePropName="tbl_stockdepreciationspan" msprop:Generator_RowDeletingName="tbl_stockdepreciationspanRowDeleting" msprop:Generator_RowChangingName="tbl_stockdepreciationspanRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockdepreciationspanRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockdepreciationspanRowDeleted" msprop:Generator_UserTableName="tbl_stockdepreciationspan" msprop:Generator_RowChangedName="tbl_stockdepreciationspanRowChanged" msprop:Generator_RowEvArgName="tbl_stockdepreciationspanRowChangeEvent" msprop:Generator_RowClassName="tbl_stockdepreciationspanRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stocklaptop" msprop:Generator_TableClassName="tbl_stocklaptopDataTable" msprop:Generator_TableVarName="tabletbl_stocklaptop" msprop:Generator_TablePropName="tbl_stocklaptop" msprop:Generator_RowDeletingName="tbl_stocklaptopRowDeleting" msprop:Generator_RowChangingName="tbl_stocklaptopRowChanging" msprop:Generator_RowEvHandlerName="tbl_stocklaptopRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stocklaptopRowDeleted" msprop:Generator_UserTableName="tbl_stocklaptop" msprop:Generator_RowChangedName="tbl_stocklaptopRowChanged" msprop:Generator_RowEvArgName="tbl_stocklaptopRowChangeEvent" msprop:Generator_RowClassName="tbl_stocklaptopRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stocklaptopvalue" msprop:Generator_TableClassName="tbl_stocklaptopvalueDataTable" msprop:Generator_TableVarName="tabletbl_stocklaptopvalue" msprop:Generator_TablePropName="tbl_stocklaptopvalue" msprop:Generator_RowDeletingName="tbl_stocklaptopvalueRowDeleting" msprop:Generator_RowChangingName="tbl_stocklaptopvalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stocklaptopvalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stocklaptopvalueRowDeleted" msprop:Generator_UserTableName="tbl_stocklaptopvalue" msprop:Generator_RowChangedName="tbl_stocklaptopvalueRowChanged" msprop:Generator_RowEvArgName="tbl_stocklaptopvalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stocklaptopvalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockmemory" msprop:Generator_TableClassName="tbl_stockmemoryDataTable" msprop:Generator_TableVarName="tabletbl_stockmemory" msprop:Generator_TablePropName="tbl_stockmemory" msprop:Generator_RowDeletingName="tbl_stockmemoryRowDeleting" msprop:Generator_RowChangingName="tbl_stockmemoryRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockmemoryRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockmemoryRowDeleted" msprop:Generator_UserTableName="tbl_stockmemory" msprop:Generator_RowChangedName="tbl_stockmemoryRowChanged" msprop:Generator_RowEvArgName="tbl_stockmemoryRowChangeEvent" msprop:Generator_RowClassName="tbl_stockmemoryRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockmemoryvalue" msprop:Generator_TableClassName="tbl_stockmemoryvalueDataTable" msprop:Generator_TableVarName="tabletbl_stockmemoryvalue" msprop:Generator_TablePropName="tbl_stockmemoryvalue" msprop:Generator_RowDeletingName="tbl_stockmemoryvalueRowDeleting" msprop:Generator_RowChangingName="tbl_stockmemoryvalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockmemoryvalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockmemoryvalueRowDeleted" msprop:Generator_UserTableName="tbl_stockmemoryvalue" msprop:Generator_RowChangedName="tbl_stockmemoryvalueRowChanged" msprop:Generator_RowEvArgName="tbl_stockmemoryvalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stockmemoryvalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockmonitor" msprop:Generator_TableClassName="tbl_stockmonitorDataTable" msprop:Generator_TableVarName="tabletbl_stockmonitor" msprop:Generator_TablePropName="tbl_stockmonitor" msprop:Generator_RowDeletingName="tbl_stockmonitorRowDeleting" msprop:Generator_RowChangingName="tbl_stockmonitorRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockmonitorRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockmonitorRowDeleted" msprop:Generator_UserTableName="tbl_stockmonitor" msprop:Generator_RowChangedName="tbl_stockmonitorRowChanged" msprop:Generator_RowEvArgName="tbl_stockmonitorRowChangeEvent" msprop:Generator_RowClassName="tbl_stockmonitorRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockmonitorvalue" msprop:Generator_TableClassName="tbl_stockmonitorvalueDataTable" msprop:Generator_TableVarName="tabletbl_stockmonitorvalue" msprop:Generator_TablePropName="tbl_stockmonitorvalue" msprop:Generator_RowDeletingName="tbl_stockmonitorvalueRowDeleting" msprop:Generator_RowChangingName="tbl_stockmonitorvalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockmonitorvalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockmonitorvalueRowDeleted" msprop:Generator_UserTableName="tbl_stockmonitorvalue" msprop:Generator_RowChangedName="tbl_stockmonitorvalueRowChanged" msprop:Generator_RowEvArgName="tbl_stockmonitorvalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stockmonitorvalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stocknetworkdevice" msprop:Generator_TableClassName="tbl_stocknetworkdeviceDataTable" msprop:Generator_TableVarName="tabletbl_stocknetworkdevice" msprop:Generator_TablePropName="tbl_stocknetworkdevice" msprop:Generator_RowDeletingName="tbl_stocknetworkdeviceRowDeleting" msprop:Generator_RowChangingName="tbl_stocknetworkdeviceRowChanging" msprop:Generator_RowEvHandlerName="tbl_stocknetworkdeviceRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stocknetworkdeviceRowDeleted" msprop:Generator_UserTableName="tbl_stocknetworkdevice" msprop:Generator_RowChangedName="tbl_stocknetworkdeviceRowChanged" msprop:Generator_RowEvArgName="tbl_stocknetworkdeviceRowChangeEvent" msprop:Generator_RowClassName="tbl_stocknetworkdeviceRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stocknetworkdevicevalue" msprop:Generator_TableClassName="tbl_stocknetworkdevicevalueDataTable" msprop:Generator_TableVarName="tabletbl_stocknetworkdevicevalue" msprop:Generator_TablePropName="tbl_stocknetworkdevicevalue" msprop:Generator_RowDeletingName="tbl_stocknetworkdevicevalueRowDeleting" msprop:Generator_RowChangingName="tbl_stocknetworkdevicevalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stocknetworkdevicevalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stocknetworkdevicevalueRowDeleted" msprop:Generator_UserTableName="tbl_stocknetworkdevicevalue" msprop:Generator_RowChangedName="tbl_stocknetworkdevicevalueRowChanged" msprop:Generator_RowEvArgName="tbl_stocknetworkdevicevalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stocknetworkdevicevalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockpcunit" msprop:Generator_TableClassName="tbl_stockpcunitDataTable" msprop:Generator_TableVarName="tabletbl_stockpcunit" msprop:Generator_TablePropName="tbl_stockpcunit" msprop:Generator_RowDeletingName="tbl_stockpcunitRowDeleting" msprop:Generator_RowChangingName="tbl_stockpcunitRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockpcunitRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockpcunitRowDeleted" msprop:Generator_UserTableName="tbl_stockpcunit" msprop:Generator_RowChangedName="tbl_stockpcunitRowChanged" msprop:Generator_RowEvArgName="tbl_stockpcunitRowChangeEvent" msprop:Generator_RowClassName="tbl_stockpcunitRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockpcunitvalue" msprop:Generator_TableClassName="tbl_stockpcunitvalueDataTable" msprop:Generator_TableVarName="tabletbl_stockpcunitvalue" msprop:Generator_TablePropName="tbl_stockpcunitvalue" msprop:Generator_RowDeletingName="tbl_stockpcunitvalueRowDeleting" msprop:Generator_RowChangingName="tbl_stockpcunitvalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockpcunitvalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockpcunitvalueRowDeleted" msprop:Generator_UserTableName="tbl_stockpcunitvalue" msprop:Generator_RowChangedName="tbl_stockpcunitvalueRowChanged" msprop:Generator_RowEvArgName="tbl_stockpcunitvalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stockpcunitvalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockperipherals" msprop:Generator_TableClassName="tbl_stockperipheralsDataTable" msprop:Generator_TableVarName="tabletbl_stockperipherals" msprop:Generator_TablePropName="tbl_stockperipherals" msprop:Generator_RowDeletingName="tbl_stockperipheralsRowDeleting" msprop:Generator_RowChangingName="tbl_stockperipheralsRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockperipheralsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockperipheralsRowDeleted" msprop:Generator_UserTableName="tbl_stockperipherals" msprop:Generator_RowChangedName="tbl_stockperipheralsRowChanged" msprop:Generator_RowEvArgName="tbl_stockperipheralsRowChangeEvent" msprop:Generator_RowClassName="tbl_stockperipheralsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockperipheralsvalue" msprop:Generator_TableClassName="tbl_stockperipheralsvalueDataTable" msprop:Generator_TableVarName="tabletbl_stockperipheralsvalue" msprop:Generator_TablePropName="tbl_stockperipheralsvalue" msprop:Generator_RowDeletingName="tbl_stockperipheralsvalueRowDeleting" msprop:Generator_RowChangingName="tbl_stockperipheralsvalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockperipheralsvalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockperipheralsvalueRowDeleted" msprop:Generator_UserTableName="tbl_stockperipheralsvalue" msprop:Generator_RowChangedName="tbl_stockperipheralsvalueRowChanged" msprop:Generator_RowEvArgName="tbl_stockperipheralsvalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stockperipheralsvalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockprinter" msprop:Generator_TableClassName="tbl_stockprinterDataTable" msprop:Generator_TableVarName="tabletbl_stockprinter" msprop:Generator_TablePropName="tbl_stockprinter" msprop:Generator_RowDeletingName="tbl_stockprinterRowDeleting" msprop:Generator_RowChangingName="tbl_stockprinterRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockprinterRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockprinterRowDeleted" msprop:Generator_UserTableName="tbl_stockprinter" msprop:Generator_RowChangedName="tbl_stockprinterRowChanged" msprop:Generator_RowEvArgName="tbl_stockprinterRowChangeEvent" msprop:Generator_RowClassName="tbl_stockprinterRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockprintervalue" msprop:Generator_TableClassName="tbl_stockprintervalueDataTable" msprop:Generator_TableVarName="tabletbl_stockprintervalue" msprop:Generator_TablePropName="tbl_stockprintervalue" msprop:Generator_RowDeletingName="tbl_stockprintervalueRowDeleting" msprop:Generator_RowChangingName="tbl_stockprintervalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockprintervalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockprintervalueRowDeleted" msprop:Generator_UserTableName="tbl_stockprintervalue" msprop:Generator_RowChangedName="tbl_stockprintervalueRowChanged" msprop:Generator_RowEvArgName="tbl_stockprintervalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stockprintervalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockstorage" msprop:Generator_TableClassName="tbl_stockstorageDataTable" msprop:Generator_TableVarName="tabletbl_stockstorage" msprop:Generator_TablePropName="tbl_stockstorage" msprop:Generator_RowDeletingName="tbl_stockstorageRowDeleting" msprop:Generator_RowChangingName="tbl_stockstorageRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockstorageRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockstorageRowDeleted" msprop:Generator_UserTableName="tbl_stockstorage" msprop:Generator_RowChangedName="tbl_stockstorageRowChanged" msprop:Generator_RowEvArgName="tbl_stockstorageRowChangeEvent" msprop:Generator_RowClassName="tbl_stockstorageRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockstoragevalue" msprop:Generator_TableClassName="tbl_stockstoragevalueDataTable" msprop:Generator_TableVarName="tabletbl_stockstoragevalue" msprop:Generator_TablePropName="tbl_stockstoragevalue" msprop:Generator_RowDeletingName="tbl_stockstoragevalueRowDeleting" msprop:Generator_RowChangingName="tbl_stockstoragevalueRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockstoragevalueRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockstoragevalueRowDeleted" msprop:Generator_UserTableName="tbl_stockstoragevalue" msprop:Generator_RowChangedName="tbl_stockstoragevalueRowChanged" msprop:Generator_RowEvArgName="tbl_stockstoragevalueRowChangeEvent" msprop:Generator_RowClassName="tbl_stockstoragevalueRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_storagecondition" msprop:Generator_TableClassName="tbl_storageconditionDataTable" msprop:Generator_TableVarName="tabletbl_storagecondition" msprop:Generator_TablePropName="tbl_storagecondition" msprop:Generator_RowDeletingName="tbl_storageconditionRowDeleting" msprop:Generator_RowChangingName="tbl_storageconditionRowChanging" msprop:Generator_RowEvHandlerName="tbl_storageconditionRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_storageconditionRowDeleted" msprop:Generator_UserTableName="tbl_storagecondition" msprop:Generator_RowChangedName="tbl_storageconditionRowChanged" msprop:Generator_RowEvArgName="tbl_storageconditionRowChangeEvent" msprop:Generator_RowClassName="tbl_storageconditionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_storagedrivetype" msprop:Generator_TableClassName="tbl_storagedrivetypeDataTable" msprop:Generator_TableVarName="tabletbl_storagedrivetype" msprop:Generator_TablePropName="tbl_storagedrivetype" msprop:Generator_RowDeletingName="tbl_storagedrivetypeRowDeleting" msprop:Generator_RowChangingName="tbl_storagedrivetypeRowChanging" msprop:Generator_RowEvHandlerName="tbl_storagedrivetypeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_storagedrivetypeRowDeleted" msprop:Generator_UserTableName="tbl_storagedrivetype" msprop:Generator_RowChangedName="tbl_storagedrivetypeRowChanged" msprop:Generator_RowEvArgName="tbl_storagedrivetypeRowChangeEvent" msprop:Generator_RowClassName="tbl_storagedrivetypeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_unitbrands" msprop:Generator_TableClassName="tbl_unitbrandsDataTable" msprop:Generator_TableVarName="tabletbl_unitbrands" msprop:Generator_TablePropName="tbl_unitbrands" msprop:Generator_RowDeletingName="tbl_unitbrandsRowDeleting" msprop:Generator_RowChangingName="tbl_unitbrandsRowChanging" msprop:Generator_RowEvHandlerName="tbl_unitbrandsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_unitbrandsRowDeleted" msprop:Generator_UserTableName="tbl_unitbrands" msprop:Generator_RowChangedName="tbl_unitbrandsRowChanged" msprop:Generator_RowEvArgName="tbl_unitbrandsRowChangeEvent" msprop:Generator_RowClassName="tbl_unitbrandsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_unitdesignation" msprop:Generator_TableClassName="tbl_unitdesignationDataTable" msprop:Generator_TableVarName="tabletbl_unitdesignation" msprop:Generator_TablePropName="tbl_unitdesignation" msprop:Generator_RowDeletingName="tbl_unitdesignationRowDeleting" msprop:Generator_RowChangingName="tbl_unitdesignationRowChanging" msprop:Generator_RowEvHandlerName="tbl_unitdesignationRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_unitdesignationRowDeleted" msprop:Generator_UserTableName="tbl_unitdesignation" msprop:Generator_RowChangedName="tbl_unitdesignationRowChanged" msprop:Generator_RowEvArgName="tbl_unitdesignationRowChangeEvent" msprop:Generator_RowClassName="tbl_unitdesignationRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_user" msprop:Generator_TableClassName="tbl_userDataTable" msprop:Generator_TableVarName="tabletbl_user" msprop:Generator_TablePropName="tbl_user" msprop:Generator_RowDeletingName="tbl_userRowDeleting" msprop:Generator_RowChangingName="tbl_userRowChanging" msprop:Generator_RowEvHandlerName="tbl_userRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_userRowDeleted" msprop:Generator_UserTableName="tbl_user" msprop:Generator_RowChangedName="tbl_userRowChanged" msprop:Generator_RowEvArgName="tbl_userRowChangeEvent" msprop:Generator_RowClassName="tbl_userRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

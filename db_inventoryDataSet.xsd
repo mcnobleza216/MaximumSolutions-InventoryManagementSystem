@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db_inventoryDataSet" targetNamespace="http://tempuri.org/db_inventoryDataSet.xsd" xmlns:mstns="http://tempuri.org/db_inventoryDataSet.xsd" xmlns="http://tempuri.org/db_inventoryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="db_inventoryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_inventoryConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InventorySystem.My.MySettings.GlobalReference.Default.db_inventoryConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_allstocksTableAdapter" GeneratorDataComponentClassName="tbl_allstocksTableAdapter" Name="tbl_allstocks" UserDataComponentName="tbl_allstocksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_inventoryConnectionString (MySettings)" DbObjectName="db_inventory.tbl_allstocks" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `stock_id`, `unit_id`, `serial_number`, `model`, `unit_type` FROM `tbl_allstocks`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_cpumanufacturerTableAdapter" GeneratorDataComponentClassName="tbl_cpumanufacturerTableAdapter" Name="tbl_cpumanufacturer" UserDataComponentName="tbl_cpumanufacturerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_inventoryConnectionString (MySettings)" DbObjectName="db_inventory.tbl_cpumanufacturer" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `manufacturer_ID`, `name` FROM `tbl_cpumanufacturer`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_stockpcunitTableAdapter" GeneratorDataComponentClassName="tbl_stockpcunitTableAdapter" Name="tbl_stockpcunit" UserDataComponentName="tbl_stockpcunitTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_inventoryConnectionString (MySettings)" DbObjectName="db_inventory.tbl_stockpcunit" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `unit_id`, `serial_number`, `model`, `manufacturer`, `cpu`, `memory`, `version`, `storage`, `purchased_value`, `depreciation_span`, `date_purchased` FROM `tbl_stockpcunit`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_userTableAdapter" GeneratorDataComponentClassName="tbl_userTableAdapter" Name="tbl_user" UserDataComponentName="tbl_userTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_inventoryConnectionString (MySettings)" DbObjectName="db_inventory.tbl_user" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `first_name`, `last_name`, `username`, `password`, `user_type` FROM `tbl_user`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db_inventoryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="db_inventoryDataSet" msprop:Generator_UserDSName="db_inventoryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_allstocks" msprop:Generator_TableClassName="tbl_allstocksDataTable" msprop:Generator_TableVarName="tabletbl_allstocks" msprop:Generator_TablePropName="tbl_allstocks" msprop:Generator_RowDeletingName="tbl_allstocksRowDeleting" msprop:Generator_RowChangingName="tbl_allstocksRowChanging" msprop:Generator_RowEvHandlerName="tbl_allstocksRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_allstocksRowDeleted" msprop:Generator_UserTableName="tbl_allstocks" msprop:Generator_RowChangedName="tbl_allstocksRowChanged" msprop:Generator_RowEvArgName="tbl_allstocksRowChangeEvent" msprop:Generator_RowClassName="tbl_allstocksRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_cpumanufacturer" msprop:Generator_TableClassName="tbl_cpumanufacturerDataTable" msprop:Generator_TableVarName="tabletbl_cpumanufacturer" msprop:Generator_TablePropName="tbl_cpumanufacturer" msprop:Generator_RowDeletingName="tbl_cpumanufacturerRowDeleting" msprop:Generator_RowChangingName="tbl_cpumanufacturerRowChanging" msprop:Generator_RowEvHandlerName="tbl_cpumanufacturerRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_cpumanufacturerRowDeleted" msprop:Generator_UserTableName="tbl_cpumanufacturer" msprop:Generator_RowChangedName="tbl_cpumanufacturerRowChanged" msprop:Generator_RowEvArgName="tbl_cpumanufacturerRowChangeEvent" msprop:Generator_RowClassName="tbl_cpumanufacturerRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_stockpcunit" msprop:Generator_TableClassName="tbl_stockpcunitDataTable" msprop:Generator_TableVarName="tabletbl_stockpcunit" msprop:Generator_TablePropName="tbl_stockpcunit" msprop:Generator_RowDeletingName="tbl_stockpcunitRowDeleting" msprop:Generator_RowChangingName="tbl_stockpcunitRowChanging" msprop:Generator_RowEvHandlerName="tbl_stockpcunitRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_stockpcunitRowDeleted" msprop:Generator_UserTableName="tbl_stockpcunit" msprop:Generator_RowChangedName="tbl_stockpcunitRowChanged" msprop:Generator_RowEvArgName="tbl_stockpcunitRowChangeEvent" msprop:Generator_RowClassName="tbl_stockpcunitRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_user" msprop:Generator_TableClassName="tbl_userDataTable" msprop:Generator_TableVarName="tabletbl_user" msprop:Generator_TablePropName="tbl_user" msprop:Generator_RowDeletingName="tbl_userRowDeleting" msprop:Generator_RowChangingName="tbl_userRowChanging" msprop:Generator_RowEvHandlerName="tbl_userRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_userRowDeleted" msprop:Generator_UserTableName="tbl_user" msprop:Generator_RowChangedName="tbl_userRowChanged" msprop:Generator_RowEvArgName="tbl_userRowChangeEvent" msprop:Generator_RowClassName="tbl_userRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
