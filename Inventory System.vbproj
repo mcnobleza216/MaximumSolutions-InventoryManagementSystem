@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA95FE22-43B7-4D5E-B454-3BFF1CFC3603}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>InventorySystem.My.MyApplication</StartupObject>
+    <RootNamespace>InventorySystem</RootNamespace>
+    <AssemblyName>Inventory Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Inventory MS\TEST\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Inventory Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Inventory Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DF3EE6EBFC4CEBAA03436CE47D9EE336005087DD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Inventory System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8-warehouse-70.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="mysql.data, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.3-noinstall\tmp\v2\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFramework">
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\MySql.Data.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Debugger">
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\MySql.Debugger.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Debugger.VisualStudio">
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\MySql.Debugger.VisualStudio.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Parser">
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\MySql.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.VisualStudio">
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\MySql.VisualStudio.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\mysql-for-visualstudio-1.2.10-noinstall\15.0v461\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="assign_external.Designer.vb">
+      <DependentUpon>assign_external.vb</DependentUpon>
+    </Compile>
+    <Compile Include="assign_external.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assign_internal.Designer.vb">
+      <DependentUpon>assign_internal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="assign_internal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard_admin.Designer.vb">
+      <DependentUpon>dashboard_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="designate_external.Designer.vb">
+      <DependentUpon>designate_external.vb</DependentUpon>
+    </Compile>
+    <Compile Include="designate_external.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="designation_internal.Designer.vb">
+      <DependentUpon>designation_internal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="designation_internal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="report_inventory.Designer.vb">
+      <DependentUpon>report_inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report_inventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_stock.Designer.vb">
+      <DependentUpon>report_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_account.Designer.vb">
+      <DependentUpon>settings_account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings_account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_employee.Designer.vb">
+      <DependentUpon>settings_employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings_employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_security.Designer.vb">
+      <DependentUpon>settings_security.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings_security.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_laptop.Designer.vb">
+      <DependentUpon>stock_laptop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_laptop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_memory.Designer.vb">
+      <DependentUpon>stock_memory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_memory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_monitor.Designer.vb">
+      <DependentUpon>stock_monitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_monitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_networkdevice.Designer.vb">
+      <DependentUpon>stock_networkdevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_networkdevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_peripherals.Designer.vb">
+      <DependentUpon>stock_peripherals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_peripherals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_printer.Designer.vb">
+      <DependentUpon>stock_printer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_printer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_storage.Designer.vb">
+      <DependentUpon>stock_storage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_storage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_systemunit.Designer.vb">
+      <DependentUpon>stock_systemunit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock_systemunit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storage_addolditem.Designer.vb">
+      <DependentUpon>storage_addolditem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storage_addolditem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storage_itemvalue.Designer.vb">
+      <DependentUpon>storage_itemvalue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storage_itemvalue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storage_manage.Designer.vb">
+      <DependentUpon>storage_manage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storage_manage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storage_return.Designer.vb">
+      <DependentUpon>storage_return.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storage_return.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storage_updateitemvalue.Designer.vb">
+      <DependentUpon>storage_updateitemvalue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="storage_updateitemvalue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assign_external.resx">
+      <DependentUpon>assign_external.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assign_internal.resx">
+      <DependentUpon>assign_internal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="designate_external.resx">
+      <DependentUpon>designate_external.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="designation_internal.resx">
+      <DependentUpon>designation_internal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDefective.rdlc" />
+    <EmbeddedResource Include="ReportStorage.rdlc" />
+    <EmbeddedResource Include="report_inventory.resx">
+      <DependentUpon>report_inventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_stock.resx">
+      <DependentUpon>report_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings_account.resx">
+      <DependentUpon>settings_account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings_employee.resx">
+      <DependentUpon>settings_employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings_security.resx">
+      <DependentUpon>settings_security.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_laptop.resx">
+      <DependentUpon>stock_laptop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_memory.resx">
+      <DependentUpon>stock_memory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_monitor.resx">
+      <DependentUpon>stock_monitor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_networkdevice.resx">
+      <DependentUpon>stock_networkdevice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_peripherals.resx">
+      <DependentUpon>stock_peripherals.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_printer.resx">
+      <DependentUpon>stock_printer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_storage.resx">
+      <DependentUpon>stock_storage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_systemunit.resx">
+      <DependentUpon>stock_systemunit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storage_addolditem.resx">
+      <DependentUpon>storage_addolditem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storage_itemvalue.resx">
+      <DependentUpon>storage_itemvalue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storage_manage.resx">
+      <DependentUpon>storage_manage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storage_return.resx">
+      <DependentUpon>storage_return.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storage_updateitemvalue.resx">
+      <DependentUpon>storage_updateitemvalue.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Inventory System_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARROWRIGHT-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARROWUP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARROWDOWN-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-tag-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8-warehouse-70.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
